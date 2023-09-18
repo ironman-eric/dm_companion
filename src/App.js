@@ -1,14 +1,9 @@
 import './App.css';
+import Companion from './components/Companion';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">        
-        <p>
-          Dungeon Master Companion
-        </p>        
-      </header>
-    </div>
+    <Companion />
   );
 }
 
