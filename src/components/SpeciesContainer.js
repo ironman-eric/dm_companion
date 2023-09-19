@@ -1,13 +1,5 @@
 import AttributePicker from './AttributePicker';
-
-const items = [
-  {
-    label: 'Elf'
-  },
-  {
-    label: 'Dwarf'
-  }
-];
+import species from '../data/species';
 
 function SpeciesContainer({ onChangeValue }) {
   return (
@@ -18,7 +10,7 @@ function SpeciesContainer({ onChangeValue }) {
         </div>
       </div>
       <div className="px-6 py-4">
-        <AttributePicker name="species" items={items} onOptionChange={onChangeValue} />
+        <AttributePicker name="species" items={Object.keys(species)} onOptionChange={onChangeValue} />
       </div>
     </div>
   );

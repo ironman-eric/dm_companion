@@ -1,13 +1,5 @@
 import AttributePicker from './AttributePicker';
-
-const items = [
-  {
-    label: 'Thief'
-  },
-  {
-    label: 'Monk'
-  }
-];
+import dndClass from '../data/dndClass';
 
 function ClassContainer({ onChangeValue }) {
   return (
@@ -18,7 +10,7 @@ function ClassContainer({ onChangeValue }) {
         </div>
       </div>
       <div className="px-6 py-4">
-        <AttributePicker name="dndClass" items={items} onOptionChange={onChangeValue} />
+        <AttributePicker name="dndClass" items={Object.keys(dndClass)} onOptionChange={onChangeValue} />
       </div>
     </div>
   );
