@@ -1,13 +1,58 @@
 const species = {
-  'Dragonborn': ['melee', 'range', 'hide'],
-  'Dwarf': ['melee', 'range', 'hide'],
-  'Elf': ['melee', 'range', 'hide'],
-  'Halfling': ['melee', 'range', 'hide'],
-  'Human': ['melee', 'range', 'hide'],
-  'Gnome': ['melee', 'range', 'hide'],
-  'Half-elves': ['melee', 'range', 'hide'],
-  'Half-orcs': ['melee', 'range', 'hide'],
-  'Tiefling': ['melee', 'range', 'hide']
+  'Dragonborn': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Dwarf': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Elf': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Halfling': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Human': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Gnome': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Half-elves': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Half-orcs': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
+  'Tiefling': [
+    {'label': 'melee', 'weight':1},
+    {'label': 'range', 'weight':1},
+    {'label': 'hide', 'weight':1},
+    {'label': 'spell', 'weight':1},
+  ],
 }
 
 export default species;
