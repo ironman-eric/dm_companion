@@ -4,7 +4,7 @@ import SpeciesContainer from './SpeciesContainer';
 import Randomizer from './Randomizer';
 
 function CompanionForm() {
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(0);
 
   const [form, setForm] = useState({
     dndClass: '',
@@ -15,9 +15,9 @@ function CompanionForm() {
     setForm(Object.assign(form, { [event.target.name]: event.target.value }));
   };
 
-  const handleSubmit = (event) => {        
-    setIsSubmitted(true);
-    event.preventDefault();    
+  const handleSubmit = (event) => {    
+    setSubmitted(submitted + 1);
+    event.preventDefault();
   };
 
   return (
@@ -33,9 +33,9 @@ function CompanionForm() {
           </button>
         </div>
         <div>
-        {isSubmitted &&
-          <Randomizer data={form}/>          
-        }
+          {submitted > 0 &&
+            <Randomizer data={form} />
+          }
         </div>
       </div>
     </form>
