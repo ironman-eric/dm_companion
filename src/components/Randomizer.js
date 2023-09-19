@@ -1,8 +1,8 @@
 import dndClass from '../data/dndClass';
 import species from '../data/species';
 
-function Randomizer({ data }) {
-  const actions = dndClass[data.dndClass].concat(species[data.species]);
+function Randomizer(props) {
+  const actions = dndClass[props.data.dndClass].concat(species[props.data.species]);
 
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
