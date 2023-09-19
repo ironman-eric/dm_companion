@@ -1,5 +1,4 @@
 import AttributePicker from './AttributePicker';
-import { useState } from "react"
 
 const items = [
   {
@@ -10,13 +9,7 @@ const items = [
   }
 ];
 
-function ClassContainer() {
-  const [cclass, setClass] = useState("")
-
-  const onOptionChange = e => {
-    setClass(e.target.value)
-  }
-
+function ClassContainer({ onChangeValue }) {
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <div className="px-6 py-4">
@@ -25,10 +18,7 @@ function ClassContainer() {
         </div>
       </div>
       <div className="px-6 py-4">
-        <AttributePicker items={items} onOptionChange={onOptionChange} />
-      </div>
-      <div className="px-6 py-4">
-        {cclass}
+        <AttributePicker name="dndClass" items={items} onOptionChange={onChangeValue} />
       </div>
     </div>
   );

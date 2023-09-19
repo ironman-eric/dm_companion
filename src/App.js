@@ -1,8 +1,8 @@
-import Companion from './components/Companion';
+import CompanionForm from './components/CompanionForm';
 
 function App() {
   return (
-    <Companion />
+    <CompanionForm />
   );
 }
 
