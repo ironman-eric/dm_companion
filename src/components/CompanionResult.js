@@ -1,26 +1,18 @@
 import dndClass from '../data/dndClass';
-import species from '../data/species';
+//import species from '../data/species';
 
-function getWeightedRandomItem(options) {
-  let i;
-
-  const weights = [options[0].weight];
-
-  for (i = 1; i < options.length; i++)
-    weights[i] = options[i].weight + weights[i - 1];
-
-    const random = Math.random() * weights[weights.length - 1];
-
-  for (i = 0; i < weights.length; i++)
-    if (weights[i] > random)
-      break;
-
-  return options[i].label;
+function getWeightedRandomItem(items) {
+  const weights = items.reduce((acc, item, i) => {
+    acc.push(item.weight + (acc[i - 1] ?? 0));
+    return acc;
+  }, []);
+  const random = Math.random() * weights.at(-1);  
+  return items[weights.findIndex((weight) => weight > random)].label;
 }
 
 function CompanionResult(props) {
-  const actions = dndClass[props.data.dndClass].concat(species[props.data.species]);
-  
+  const actions = dndClass[props.data.dndClass];  
+
   return (
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <div className="px-6 py-4">
