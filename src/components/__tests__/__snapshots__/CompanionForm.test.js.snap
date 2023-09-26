@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanionForm Matches DOM Snapshot 1`] = `
+<div
+  className="p-6 bg-sky-100 rounded"
+>
+  <div
+    className="flex items-center justify-center font-black m-3 mb-12"
+  >
+    <form
+      className="flex flex-col justify-center"
+      onSubmit={[Function]}
+    >
+      <div
+        className="mb-4"
+      >
+        <label
+          className="block text-gray-700 text-sm font-bold mb-2"
+        >
+          Select a Class
+        </label>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Barbarian"
+          />
+            
+          Barbarian
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Bard"
+          />
+            
+          Bard
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Cleric"
+          />
+            
+          Cleric
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Fighter"
+          />
+            
+          Fighter
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Monk"
+          />
+            
+          Monk
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Ranger"
+          />
+            
+          Ranger
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Rogue"
+          />
+            
+          Rogue
+        </span>
+        <span
+          className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >
+          <input
+            name="dndClass"
+            onChange={[Function]}
+            type="radio"
+            value="Wizard"
+          />
+            
+          Wizard
+        </span>
+      </div>
+      <div
+        className="flex items-center justify-between"
+      >
+        <button
+          className="px-8 py-3 block w-full text-white bg-blue-600 rounded focus:outline-none disabled:opacity-25"
+          disabled={true}
+          type="submit"
+        >
+          Action
+        </button>
+      </div>
+      <div
+        className="flex items-center justify-between"
+      />
+    </form>
+  </div>
+</div>
+`;

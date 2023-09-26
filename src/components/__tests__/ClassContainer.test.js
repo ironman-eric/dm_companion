@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import App from "./App";
+import ClassContainer from "../ClassContainer";
 
-describe("Jest Snapshot testing suite", () => {
+describe("ClassContainer", () => {
   it("Matches DOM Snapshot", () => {
-    const domTree = renderer.create(<App />).toJSON();
+    const domTree = renderer.create(<ClassContainer />).toJSON();
     expect(domTree).toMatchSnapshot();
   });
 });
