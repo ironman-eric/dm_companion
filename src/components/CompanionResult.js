@@ -1,5 +1,4 @@
 import dndClass from '../data/dndClass';
-//import species from '../data/species';
 
 function getWeightedRandomItem(items) {
   const weights = items.reduce((acc, item, i) => {
@@ -10,17 +9,11 @@ function getWeightedRandomItem(items) {
   return items[weights.findIndex((weight) => weight > random)].label;
 }
 
-function CompanionResult(props) {
-  const actions = dndClass[props.data.dndClass];  
+function CompanionResult({data}) {
+  const actions = dndClass[data];  
 
-  return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg">
-      <div className="px-6 py-4">
-        <div className="font-bold text-lg mb-2">
-          Randomized Action: {getWeightedRandomItem(actions)}
-        </div>
-      </div>
-    </div>
+  return (    
+    <p className="text-s italic">Randomized Action: {getWeightedRandomItem(actions)}</p>    
   );
 }
 

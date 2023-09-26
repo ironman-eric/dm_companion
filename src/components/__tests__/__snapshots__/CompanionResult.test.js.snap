@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompanionResult Matches DOM Snapshot 1`] = `
+<p
+  className="text-s italic"
+>
+  Randomized Action: 
+  Shove
+</p>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AttributePicker Matches DOM Snapshot 1`] = `
+Array [
+  <span
+    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+  >
+    <input
+      type="radio"
+      value="items1"
+    />
+      
+    items1
+  </span>,
+  <span
+    className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+  >
+    <input
+      type="radio"
+      value="item2"
+    />
+      
+    item2
+  </span>,
+]
+`;

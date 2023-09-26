@@ -1,6 +1,5 @@
 import { useState } from "react"
 import ClassContainer from './ClassContainer';
-import SpeciesContainer from './SpeciesContainer';
 import CompanionResult from './CompanionResult';
 
 function CompanionForm() {
@@ -8,11 +7,10 @@ function CompanionForm() {
   const [disabled, setDisabled] = useState(true);
 
   const [form, setForm] = useState({
-    dndClass: '',
-    species: ''
+    dndClass: ''
   });
 
-  const enabled = () => (form.dndClass.length > 0 && form.species.length > 0);
+  const enabled = () => (form.dndClass.length > 0);
 
   const handleChange = (event) => {
     setForm(Object.assign(form, { [event.target.name]: event.target.value }));
@@ -25,24 +23,24 @@ function CompanionForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div class="container mx-auto">
-        <div class="grid grid-cols-2 gap-1">
+    <div className="p-6 bg-sky-100 rounded">
+      <div className="flex items-center justify-center font-black m-3 mb-12">
+        <form onSubmit={handleSubmit} className="flex flex-col justify-center">
           <ClassContainer onChangeValue={handleChange} />
-          <SpeciesContainer onChangeValue={handleChange} />
-        </div>
-        <div class="flex items-center justify-between">
-          <button type="submit" disabled={disabled} class="px-8 py-3 block w-full text-white bg-blue-600 rounded focus:outline-none disabled:opacity-25">
-            Action
-          </button>
-        </div>
-        <div>
-          {submitted > 0 &&
-            <CompanionResult data={form} />
-          }
-        </div>
+          <div className="flex items-center justify-between">
+            <button type="submit" disabled={disabled} className="px-8 py-3 block w-full text-white bg-blue-600 rounded focus:outline-none disabled:opacity-25">
+              Action
+            </button>
+          </div>
+          <div className="flex items-center justify-between">
+            {submitted > 0 &&
+              <CompanionResult data={form.dndClass} />
+            }
+          </div>
+
+        </form>
       </div>
-    </form>
+    </div>
   );
 }
 

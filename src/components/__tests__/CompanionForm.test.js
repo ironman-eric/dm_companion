@@ -1,10 +1,10 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import App from "./App";
+import CompanionForm from "../CompanionForm";
 
-describe("Jest Snapshot testing suite", () => {
+describe("CompanionForm", () => {
   it("Matches DOM Snapshot", () => {
-    const domTree = renderer.create(<App />).toJSON();
+    const domTree = renderer.create(<CompanionForm />).toJSON();
     expect(domTree).toMatchSnapshot();
   });
 });
